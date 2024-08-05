@@ -30,7 +30,19 @@
 
 
 
-        // I,PRESSÃO DE ARRAYS
+        $carros["s1"] = "Siena"; 
+        echo $carros["s1"] = "siena"; // Utilização de índice do tipo "string". Ordenando deste modo, o valor sempre ocupará o último índice no momento em que foi adicionado. Por isso que o índice "s1" aparece antes do índice "13" abaixo pois, foi adicionado antes.
+
+
+        echo $carros[13], "<br>";
+        $carros[13] = "Ferrari";
+        echo $carros[13], "<br>";
+
+        $carros[5] = "Fusca"; // O resultado "Fusca" aparecerá na última posição da array e não na 5º pois, foi incluído por último. Para que um elemento respeite a ordem, ele precisa ser incluído no começo ou utilizar os colchetes sem valor "[]". Desse modo, ele sempre ocupará a última posição da array.
+
+
+
+        // IMPRESSÃO DE ARRAYS
 
         echo "<h1>Impressão de array completa</h1>";
 
