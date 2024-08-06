@@ -7,8 +7,7 @@
 </head>
 <body>
     <?php 
-        echo "Olá ",$_GET["nome"], " ",$_GET["sobrenome"], " seja bem-vindo ao sistema.";
-
+        echo "Olá ",$_POST["nome"], " ",$_POST["sobrenome"], " seja bem-vindo ao sistema.";
     ?>
 </body>
 </html>
