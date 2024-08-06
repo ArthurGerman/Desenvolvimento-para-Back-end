@@ -31,6 +31,7 @@
             echo "<td>$i</td>";
         }
         echo "</tr></table>";
+        echo ""
 
     ?>
 </body>
