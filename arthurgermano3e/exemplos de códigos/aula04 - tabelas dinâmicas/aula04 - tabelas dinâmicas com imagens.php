@@ -41,13 +41,14 @@
         for ($i=1; $i<=10; $i++ ){ // Loop
             if ($i%2 == 0) {
                 echo "<tr style='background-color: green'><td>$i</td></tr>"; //Nessa linha, através do condicional "if", apenas os números cuja divisão por 2 for exata, terão suas células pintadas na cor selecionada. 
-            }
+            } 
 
             else {
                 echo "<tr><td>$i</td></tr>";
             }
         }
         echo "</table>"; //Fim da tabela
+        
 
     ?>
 </body>
