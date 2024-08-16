@@ -4,5 +4,5 @@
 
     $resultado = $n1 + $n2;
 
-    echo "A soma é: ",$resultado;
+    header("Location: aula09 - transferencia de dados.php?res=$resultado&n1=$n1&n2=$n2");
 ?>
