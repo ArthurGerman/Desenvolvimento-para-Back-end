@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="atv01.css">
+    <link rel="stylesheet" href="php.css">
+
+    <script>
+        function confirmar() {
+            window.alert("Os seus dados foram salvos");
+        }
+    </script>
 </head>
 <body>
-    <h1>Página de Confirmação</h1>
+    <img src="RF.png" alt="">
+
+
+    <h1 align="center">PÁGINA DE CONFIRMAÇÃO</h1>
 
     <h2>Informações pessoais</h2>
     <p><strong>Nome completo: </strong> <?php echo $_POST["nome"]?></p>
@@ -29,6 +40,17 @@
     <h2>Informaçõess de contato</h2>
     <p><strong>Telefone: </strong> <?php echo $_POST["telefone"]?></p>
     <p><strong>E-mail: </strong> <?php echo $_POST["e-mail"]?></p>
+
+    <button onclick="confirmar()" id="confirm">Confirmar</button>
+    <button onclick="history.back()">Editar</button>
+
+
+    <footer>
+        <div id="footer">
+            <hr>
+            <p id="receita">Receita Federal® 2024 Todos os direitos reservados. </p>
+        </div>
+    </footer>
 
 </body>
 </html>
