@@ -29,12 +29,12 @@
     <p><strong>CPF: </strong> <?php echo $_POST["cpf"]?></p>
 
     <h2>Informações de endereço</h2>
-    <p><strong>Logradouro: </strong> <?php echo $_POST["logradouro"]?></p>
+    <p><strong>Logradouro: </strong> <?php echo $_POST["rua"]?></p>
     <p><strong>Número: </strong> <?php echo $_POST["numero"]?></p>
     <p><strong>Complemento: </strong> <?php echo $_POST["complemento"]?></p>
     <p><strong>Bairro: </strong> <?php echo $_POST["bairro"]?></p>
     <p><strong>Cidade: </strong> <?php echo $_POST["cidade"]?></p>
-    <p><strong>UF: </strong> <?php echo $_POST["estado"]?></p>
+    <p><strong>UF: </strong> <?php echo $_POST["uf"]?></p>
     <p><strong>CEP: </strong> <?php echo $_POST["cep"]?></p>
 
     <h2>Informaçõess de contato</h2>
