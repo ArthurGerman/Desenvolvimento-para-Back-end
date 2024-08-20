@@ -1,0 +1,48 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+text{
+    color: whitesmoke;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(67, 186, 255), rgb(141, 208, 245), rgb(160, 43, 255));
+    background-size: 5000% 400%;
+    animation: degrade-animado 10s infinite alternate;
+}
+@keyframes degrade-animado{ /* Efeito de degradê animado*/
+    0%{
+        background-position-x: 0% ;
+    }
+    100%{
+        background-position-x: 100% ;
+    }
+}
+
+
+
+
+h1{
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+p{
+    width: 40%;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+form{
+    padding: 20px;
+    border: none;
+}
+td{
+    padding: 7px;
+}
