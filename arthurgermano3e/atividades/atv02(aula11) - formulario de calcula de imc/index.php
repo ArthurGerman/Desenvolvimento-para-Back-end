@@ -15,6 +15,13 @@
                 input.value = valor + '.';
             }
         }
+        function formatarPeso(input) {
+            var valor = input.value;
+            var regex = /^\d{2}$/;
+            if (regex.test(valor)) {
+                input.value = valor + '.';
+            }
+        }
     </script>
 
     <h1>Formulário de cálculo de IMC</h1><br>
@@ -27,7 +34,7 @@
         <table>
             <tr>
                 <td><label for="peso">Digite seu peso em quilogramas: </label></td>
-                <td><input type="text" name="peso" maxlength="2" value="<?php echo (isset($_GET["peso"])?$_GET["peso"]:"");?>"><br></td>
+                <td><input type="text" name="peso" oninput="formatarPeso(this)" maxlength="5" value="<?php echo (isset($_GET["peso"])?$_GET["peso"]:"");?>"><br></td>
             </tr>
  
             <tr>
