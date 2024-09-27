@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 26-Set-2024 às 19:32
+-- Tempo de geração: 28-Set-2024 às 01:29
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.1.12
 
@@ -22,6 +22,20 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `db_biblioteca` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `db_biblioteca`;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `emprestimo`
+--
+
+CREATE TABLE `emprestimo` (
+  `cod_emprestimo` int(11) NOT NULL,
+  `data_emprestimo` date DEFAULT NULL,
+  `data_devolucao` date DEFAULT NULL,
+  `cod_livro` int(11) DEFAULT NULL,
+  `cod_leitor` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -66,8 +80,27 @@ CREATE TABLE `livro` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Extraindo dados da tabela `livro`
+--
+
+INSERT INTO `livro` (`cod_livro`, `titulo`, `autor`, `editora`, `ano_publicacao`, `genero`) VALUES
+(1, 'O Senhor dos Anéis: A Sociedade do Anel', 'J.R.R Tolkien', 'HarperCollins', 1954, 'Fantasia'),
+(2, '1984', 'George Orwell', 'Companhia das Letras', 1949, 'Ficção científica'),
+(3, 'Dom Casmurro', 'Machado de Assis', 'Principis', 1899, 'Clássico'),
+(4, 'O Código Da Vinci', 'Dan Brown', 'Arqueiro', 2003, 'Suspense'),
+(5, 'A Revolução dos Bichos', 'George Orwell', 'Companhia das Letras', 1945, 'Sátira');
+
+--
 -- Índices para tabelas despejadas
 --
+
+--
+-- Índices para tabela `emprestimo`
+--
+ALTER TABLE `emprestimo`
+  ADD PRIMARY KEY (`cod_emprestimo`),
+  ADD KEY `cod_livro` (`cod_livro`),
+  ADD KEY `cod_leitor` (`cod_leitor`);
 
 --
 -- Índices para tabela `leitor`
@@ -80,6 +113,33 @@ ALTER TABLE `leitor`
 --
 ALTER TABLE `livro`
   ADD PRIMARY KEY (`cod_livro`);
+
+--
+-- AUTO_INCREMENT de tabelas despejadas
+--
+
+--
+-- AUTO_INCREMENT de tabela `emprestimo`
+--
+ALTER TABLE `emprestimo`
+  MODIFY `cod_emprestimo` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `livro`
+--
+ALTER TABLE `livro`
+  MODIFY `cod_livro` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- Restrições para despejos de tabelas
+--
+
+--
+-- Limitadores para a tabela `emprestimo`
+--
+ALTER TABLE `emprestimo`
+  ADD CONSTRAINT `emprestimo_ibfk_1` FOREIGN KEY (`cod_livro`) REFERENCES `livro` (`cod_livro`),
+  ADD CONSTRAINT `emprestimo_ibfk_2` FOREIGN KEY (`cod_leitor`) REFERENCES `leitor` (`CPF`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
