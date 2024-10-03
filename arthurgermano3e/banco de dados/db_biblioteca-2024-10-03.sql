@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03-Out-2024 às 01:51
+-- Tempo de geração: 03-Out-2024 às 21:28
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.1.12
 
@@ -64,19 +64,22 @@ CREATE TABLE `leitor` (
   `nome` varchar(255) DEFAULT NULL,
   `sexo` varchar(255) DEFAULT NULL,
   `telefone` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL
+  `email` varchar(255) DEFAULT NULL,
+  `CPF` varchar(11) DEFAULT NULL,
+  `rua` varchar(255) DEFAULT NULL,
+  `cidade` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Extraindo dados da tabela `leitor`
 --
 
-INSERT INTO `leitor` (`id_leitor`, `nome`, `sexo`, `telefone`, `email`) VALUES
-(1, 'Daniel da Silva', 'M', '(81)1234-5678', 'example@hotmail.com'),
-(2, 'Lucas do Rio Verde', 'M', '(81)99876-5432', 'example@hotmail.com'),
-(3, 'Arthur Germano da Cunha Silva', 'M', '(81)98859-7145', 'example@hotmail.com'),
-(4, 'José Luiz Germano da Cunha', 'M', '(81)8838-1318', 'example@hotmail.com'),
-(5, 'Josiane Ribeiro da Silva', 'F', '(81)5889-7924', 'example@hotmail.com');
+INSERT INTO `leitor` (`id_leitor`, `nome`, `sexo`, `telefone`, `email`, `CPF`, `rua`, `cidade`) VALUES
+(1, 'Daniel da Silva', 'M', '(81)1234-5678', 'example@hotmail.com', '11122233344', 'Rua do Cajá', 'Igarassu'),
+(2, 'Lucas do Rio Verde', 'M', '(81)99876-5432', 'example@hotmail.com', '22233334445', 'Rua da Aurora', 'Pindamonhagaba'),
+(3, 'Arthur Germano da Cunha Silva', 'M', '(81)98859-7145', 'example@hotmail.com', '33344455566', 'Rua das flores', 'Jacarepaguá'),
+(4, 'José Luiz Germano da Cunha', 'M', '(81)8838-1318', 'example@hotmail.com', '44455566677', 'Rua do Governador', 'Vasco da Gama'),
+(5, 'Josiane Ribeiro da Silva', 'F', '(81)5889-7924', 'example@hotmail.com', '55566677788', 'Rua da Vovó', 'Abreu e Lima');
 
 -- --------------------------------------------------------
 
