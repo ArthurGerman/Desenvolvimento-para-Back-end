@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03-Out-2024 às 21:28
+-- Tempo de geração: 04-Out-2024 às 23:16
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.1.12
 
@@ -76,7 +76,7 @@ CREATE TABLE `leitor` (
 
 INSERT INTO `leitor` (`id_leitor`, `nome`, `sexo`, `telefone`, `email`, `CPF`, `rua`, `cidade`) VALUES
 (1, 'Daniel da Silva', 'M', '(81)1234-5678', 'example@hotmail.com', '11122233344', 'Rua do Cajá', 'Igarassu'),
-(2, 'Lucas do Rio Verde', 'M', '(81)99876-5432', 'example@hotmail.com', '22233334445', 'Rua da Aurora', 'Pindamonhagaba'),
+(2, 'Trikasloucas', 'Indefinido', '(81)99876-5432', 'example@hotmail.com', '22233334445', 'Rua das Trikas', 'Morumbambis'),
 (3, 'Arthur Germano da Cunha Silva', 'M', '(81)98859-7145', 'example@hotmail.com', '33344455566', 'Rua das flores', 'Jacarepaguá'),
 (4, 'José Luiz Germano da Cunha', 'M', '(81)8838-1318', 'example@hotmail.com', '44455566677', 'Rua do Governador', 'Vasco da Gama'),
 (5, 'Josiane Ribeiro da Silva', 'F', '(81)5889-7924', 'example@hotmail.com', '55566677788', 'Rua da Vovó', 'Abreu e Lima');
@@ -146,7 +146,7 @@ ALTER TABLE `emprestimo`
 -- AUTO_INCREMENT de tabela `leitor`
 --
 ALTER TABLE `leitor`
-  MODIFY `id_leitor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_leitor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `livro`
