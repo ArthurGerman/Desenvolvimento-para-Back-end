@@ -4,34 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastramento</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Formulário de cadastramento</h1>
+    
 
     <form action="cadastramento_leitor.php" method="post">
-        <label for="nome">Digite seu nome: </label>
-        <input type="text" name="nome"> <br>
-
-        <label for="sexo">Sexo</label>
-        <input type="text" name="sexo"> <br>
-
-        <label for="telefone">Telefone: </label>
-        <input type="text" name="telefone"> <br>
-
-        <label for="email">E-mail: </label>
-        <input type="text" name="email"> <br>
-
-        <label for="cpf">CPF: </label>
-        <input type="text" name="cpf"> <br>
-
-        <label for="rua">Logradouro: </label>
-        <input type="text" name="rua"> <br>
-
-        <label for="cidade">Cidade: </label>
-        <input type="text" name="cidade"> <br>
-
-        <input type="submit" value="Cadastrar">
+        <table>
+            <tr>
+                <td colspan="2">
+                    <h1>Formulário de cadastramento</h1>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="nome">Digite seu nome: </label><br>
+                    <input type="text" name="nome" style="width: 86%;">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="sexo">Sexo:</label><br>
+                    <input type="text" name="sexo">
+                </td>
+                <td>
+                    <label for="telefone">Telefone: </label><br>
+                    <input type="text" name="telefone">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="email">E-mail: </label><br>
+                    <input type="text" name="email">
+                </td>
+                <td>
+                    <label for="cpf">CPF: </label><br>
+                    <input type="text" name="cpf">
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td>
+                    <label for="rua">Logradouro: </label><br>
+                    <input type="text" name="rua"> 
+                </td>
+                <td>
+                    <label for="cidade">Cidade: </label><br>
+                    <input type="text" name="cidade">
+                </td>
+            </tr>
+            
+            
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Cadastrar" style="cursor: pointer;">
+                </td>
+            </tr>
+            
+        </table>
 
     </form>
 

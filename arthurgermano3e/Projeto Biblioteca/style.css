@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+body{
+    display: flex;
+  
+}
+table{
+    background-color: aqua;
+}
+td{
+    padding: 5px;
+}
+input{
+    display: flex;
+    justify-content: center;
+}
