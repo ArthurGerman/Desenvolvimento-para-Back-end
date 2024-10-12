@@ -9,6 +9,15 @@ body{
     display: flex;
   
 }
+#form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 86vh;
+    align-items: center;
+    background-color: red;
+}
+
 table{
     background-color: aqua;
 }
@@ -18,4 +27,23 @@ td{
 input{
     display: flex;
     justify-content: center;
+}
+label, input{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+}
+footer p{
+    margin-bottom: 10px;
 }

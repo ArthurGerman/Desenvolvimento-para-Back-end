@@ -4,71 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastramento</title>
+    <script src="cep.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     
 
-    <form action="cadastramento_leitor.php" method="post">
-        <table>
-            <tr>
-                <td colspan="2">
-                    <h1>Formulário de cadastramento</h1>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <label for="nome">Digite seu nome: </label><br>
-                    <input type="text" name="nome" style="width: 86%;">
-                </td>
-            </tr>
-            
-            <tr>
-                <td>
-                    <label for="sexo">Sexo:</label><br>
-                    <input type="text" name="sexo">
-                </td>
-                <td>
-                    <label for="telefone">Telefone: </label><br>
-                    <input type="text" name="telefone">
-                </td>
-            </tr>
-            
-            <tr>
-                <td>
-                    <label for="email">E-mail: </label><br>
-                    <input type="text" name="email">
-                </td>
-                <td>
-                    <label for="cpf">CPF: </label><br>
-                    <input type="text" name="cpf">
-                </td>
-            </tr>
-            
+    <div id="form">
+        <form action="cadastramento_leitor.php" method="post">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h1>Formulário de cadastramento</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nome">Digite seu nome: </label><br>
+                        <input type="text" name="nome" >
+                    </td>
+                    <td>
+                        <label for="cep">CEP:</label><br>
+                        <input type="text" name="cep" id="cep" maxlength="8" onblur="pesquisacep(this.value);">
+                    </td>
+                </tr>
         
-            <tr>
-                <td>
-                    <label for="rua">Logradouro: </label><br>
-                    <input type="text" name="rua"> 
-                </td>
-                <td>
-                    <label for="cidade">Cidade: </label><br>
-                    <input type="text" name="cidade">
-                </td>
-            </tr>
-            
-            
-            <tr>
-                <td colspan="2">
-                    <input type="submit" value="Cadastrar" style="cursor: pointer;">
-                </td>
-            </tr>
-            
-        </table>
+                <tr>
+                    <td >
+                        <label for="sexo">Sexo:</label><br>
+                        
+                        <input type="radio" name="sexo" value="M">
+                        <label for="M">Masculino</label><br>
+                        
+                        <input type="radio" name="sexo" value="F">
+                        <label for="F">Feminino</label><br>
 
-    </form>
+                        <input type="radio" name="sexo" value="Outro">
+                        <label for="outro">Outro</label>
+                    </td>
+                    <td>
+                        <label for="telefone">Telefone: </label><br>
+                        <input type="text" name="telefone">
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        <label for="email">E-mail: </label><br>
+                        <input type="text" name="email">
+                    </td>
+                    <td>
+                        <label for="cpf">CPF: </label><br>
+                        <input type="text" name="cpf">
+                    </td>
+                </tr>
+        
+        
+                <tr>
+                    <td>
+                        <label for="rua">Logradouro: </label><br>
+                        <input type="text" name="rua" id="rua">
+                    </td>
+                    <td>
+                        <label for="cidade">Cidade: </label><br>
+                        <input type="text" name="cidade" id="cidade">
+                    </td>
+                </tr>
+        
+        
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Cadastrar" style="cursor: pointer;">
+                    </td>
+                </tr>
+        
+            </table>
+        </form>
+    </div>
 
+    <footer>
+        <p>Aluno: Arthur Germano</p>
+        <a href="https://github.com/ArthurGerman" target="_blank" style="cursor: pointer;">Mais códigos</a>
+    </footer>
 
 </body>
 </html>
