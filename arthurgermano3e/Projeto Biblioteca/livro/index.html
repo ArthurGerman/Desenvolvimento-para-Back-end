@@ -1,48 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,400&display=swap" rel="stylesheet">
+    <title>Página de cadastramento</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="cadastramento_livro.php" method="post">
-        <table>
-            <tr>
-                <td>
-                    <label for="titulo">Título</label><br>
-                    <input type="text" name="titulo">
-                </td>
-                <td>
-                    <label for="autor">Autor: </label><br>
-                    <input type="text" name="autor">
-                </td>
-            </tr>
-            
-            <tr>
-                <td>
-                    <label for="editora">Editora: </label><br>
-                    <input type="text" name="editora">
-                </td>
-                <td>
-                    <label for="ano_publicacao">Ano de publicação: </label><br>
-                    <input type="text" name="ano_publicacao">
-                </td>
-            </tr>
 
-            <tr>
-                <td>
-                    <label for="genero">Gênero: </label><br>
-                    <input type="text" name="genero">
-                </td>
-            </tr>
+    <div id="menu">
 
-            <tr>
-                <td>
-                    <input type="submit" value="Cadastrar">
-                </td>
-            </tr>
-        </table>
-    </form>
+    </div>
+    
+
+    <div id="corpo">
+        <h1>Cadastro de livro</h1>
+
+        <form action="cadastramento_livro.php" method="post">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <input placeholder="Título do livro" type="text" name="titulo">
+                    </td>
+                    <td>
+                        <input placeholder="Ano de publicação" type="text" name="ano_publicacao">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input placeholder="Autor" type="text" name="autor">
+                    </td>
+                    <td>
+                        <input placeholder="Editora" type="text" name="editora">
+                    </td>
+                    <td>
+                        <input placeholder="Gênero" type="text" name="genero">
+                    </td>
+                </tr>
+        
+              
+                <tr>
+                    <td colspan="3" align="right">
+                        <input id="botao" type="submit" value="Cadastrar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
 </body>
 </html>

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+}
+
+div#container{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    height: 100vh;
+    width: 100%;
+}
+div#nav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: red;
+    height: 65px;
+    width: 100%;
+}
+div#corpo{
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+span{
+    margin-top: 20px;
+    margin-right: 40px;
+}

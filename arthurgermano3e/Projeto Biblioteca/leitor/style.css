@@ -1,49 +1,54 @@
-@charset "UTF-8";
-
 *{
     margin: 0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    margin: 0;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
 }
 
 body{
     display: flex;
+    background-image: url(./livros.jpeg);
+    background-position: center center;
+    background-size: cover;
   
 }
 #form{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 86vh;
+    height: 100vh;
     align-items: center;
-    background-color: red;
+    
+}
+form{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid white;
+    backdrop-filter: blur(10px);
+    color: white;
 }
 
 table{
-    background-color: aqua;
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
 td{
-    padding: 5px;
+    padding: 10px;
 }
 input{
-    display: flex;
-    justify-content: center;
-}
-label, input{
-    display: inline-block;
-    margin-right: 10px;
+    width: 300px;
+    height: 30px;
+    background-color: whitesmoke;
+    border: 1px solid black;
 }
 
-footer{
-    display: flex;
-    text-align: center;
-    position: absolute;
-    justify-content: center;
-    flex-direction: column;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background-color: whitesmoke;
+input:hover {
+    background-color: rgb(216, 216, 216);
 }
-footer p{
-    margin-bottom: 10px;
+#botao{
+    width: 100px;
+    margin-top: 30px;
 }
