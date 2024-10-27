@@ -1,26 +1,15 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
   
 }
 
 body{
     display: flex;
-    height: 100vh;
-
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* background-image: url(livros.jpeg); 
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;*/
-
-    
-    
+    height: 100vh;    
 }
 
 h1{
@@ -37,7 +26,7 @@ h1{
     height: 100vh;
     margin-left: 0;
     background-size: cover;
-    background-image: url(./livros.jpeg);
+    background-image: url(../leitor/livros.jpeg);
 }
 form{
     /* margin-top: 200px; */
