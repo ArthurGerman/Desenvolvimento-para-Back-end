@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <title>Verificação de administrador</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div>
@@ -22,11 +23,11 @@
 
 
                 <tr>
-                    <td><input type="text" name="usuario" placeholder="Usuário" style="color: red;" value="<?php echo(isset($_GET["usuario_invalido"])?$_GET["usuario_invalido"]:"");?>"></td>
+                    <td><input type="text" name="usuario" placeholder="Usuário" style="color: red;" onclick="limpa_mensagem(usuario)" value="<?php echo(isset($_GET["usuario_invalido"])?$_GET["usuario_invalido"]:"");?>"></td>
                 </tr>
 
                 <tr>
-                    <td><input type="text" name="senha" placeholder="Senha" style="color: red;" value="<?php echo(isset($_GET["senha_invalida"])?$_GET["senha_invalida"]:"");?>"></td>
+                    <td><input type="text" name="senha" placeholder="Senha" style="color: red;" onclick="limpa_mensagem(senha)" value="<?php echo(isset($_GET["senha_invalida"])?$_GET["senha_invalida"]:"");?>"></td>
                 </tr>
 
                 <tr>
