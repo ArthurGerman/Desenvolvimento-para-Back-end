@@ -7,7 +7,7 @@
 
 body{
     display: flex;
-    background-image: url(./livros.jpeg);
+    background-image: url(/arthurgermano3e/projeto_biblioteca/img/livros.jpeg);
     background-position: center center;
     background-size: cover;
     backdrop-filter: blur(10px);
@@ -27,23 +27,25 @@ form{
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 5px;
     backdrop-filter: blur(10px);
-    
 }
 
 table{
     display: flex;
+    text-align: center;
     align-items: center;
     padding: 20px;
 }
 td{
-    padding: 10px;
+    display: flex;
+    padding: 2px;
+    text-align: center;
 }
 input{
     border-radius: 3px;
-    width: 300px;
     height: 30px;
     background-color: rgba(255, 255, 255, 0.548);
     border: none;
+    box-sizing: border-box;
 }
 
 input:hover {
@@ -53,3 +55,11 @@ input:hover {
     width: 100px;
     margin-top: 30px;
 }
+button:hover{
+    background-color: rgb(216, 216, 216); 
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+

@@ -1,5 +1,5 @@
 <?php 
-    include "../leitor/config.php";
+    include "config.php";
 
    if(!$conn){
     die("Falha na conexão" . mysqli_connect_error());
@@ -24,8 +24,8 @@
     die(mysqli_error(mysql: $conn));
 
     if($query){
-        echo "Livro cadastrado";
-        echo "<a href='index.html'><button>Voltar</button></a>";
+        header("location: ./confirmacao_cadastro.html");
+        
     }
     else{
         echo "Erro de cadastramento";

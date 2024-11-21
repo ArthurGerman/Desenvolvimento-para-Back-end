@@ -21,12 +21,11 @@ h1{
     width: 100%;
 }
 #menu{
-    background-color: whitesmoke;
     width: 250px;
     height: 100vh;
     margin-left: 0;
     background-size: cover;
-    background-image: url(../leitor/livros.jpeg);
+    background-image: url(/arthurgermano3e/projeto_biblioteca/img/livros.jpeg);
 }
 form{
     /* margin-top: 200px; */
@@ -49,7 +48,4 @@ input{
     height: 30px;
 }
 
-#botao{
-    width: 15%;
-    
-}
+

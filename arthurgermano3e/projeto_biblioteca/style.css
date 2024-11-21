@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/livros.jpeg);
+    background-position: center center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+
+
+div#blur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+}
+div#container{
+    display: flex;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 65%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+div#row{
+  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#usuario, #livros, #emprestimo{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 275px;
+    margin-bottom: 10px;
+    height: 130px;
+}
+#usuario{
+    margin-right: 20px;
+    border-right: 1px solid black;
+}
+#emprestimo{
+    margin-left: 20px;
+    border-left: 1px solid black;
+}
+
+
+
+
+
+
+h1{
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+h2{
+    color: black;
+    margin-bottom: 10px;
+}
+
+a{
+    color: black;
+    margin-bottom: 10px;
+    position: relative;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(102, 145, 255);
+}
+a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(102, 145, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+a:hover::after{
+    width: 102%;
+}

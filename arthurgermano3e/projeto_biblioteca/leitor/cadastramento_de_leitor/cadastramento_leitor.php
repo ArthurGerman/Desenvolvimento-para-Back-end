@@ -33,15 +33,12 @@
     die(mysqli_error(mysql: $conn));
 
     if($query){
-        echo "<center>";
-        echo "Cadastro realizado com sucesso. <br>";
-        echo "<a href= 'index.php'><button title = 'Voltar ao início'>Voltar</button></a>";
-        echo "</center>";
+        header("location: ./tela_confirmacao.html");
     } 
     else{
         echo "<center>";
         echo "Erro ao realizar o cadastro. <br>";
-        echo "<a href= 'index.php'> <button title = 'Voltar ao início'>Voltar</button></a>";
+        echo "<a href= '/arthurgermano3e/projeto_biblioteca/index.html'> <button title = 'Voltar ao início'>Voltar</button></a>";
         echo "</center>";
     }
 ?>
